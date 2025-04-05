@@ -1,0 +1,32 @@
+@tailwind  base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-pastel-sky/10 text-slate-700;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply rounded-md px-4 py-2 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-pastel-lavender text-slate-700 hover:bg-pastel-lilac;
+  }
+  
+  .btn-outline {
+    @apply border border-slate-200 bg-white hover:bg-slate-50;
+  }
+  
+  .input {
+    @apply w-full rounded-md border border-slate-200 px-3 py-2 focus:border-pastel-lavender focus:outline-none focus:ring-1 focus:ring-primary-400;
+  }
+  
+  .card {
+    @apply rounded-lg bg-white p-6 shadow-sm;
+  }
+}
+ 
